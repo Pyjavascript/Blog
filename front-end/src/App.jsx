@@ -23,7 +23,7 @@ const routes = [{
     element: <ArticleList />
   },
   {
-    path: '/articles/individual',
+    path: '/articles/:name', // /articles/learn-Ai
     element: <Articlepage />
   }
 ]
