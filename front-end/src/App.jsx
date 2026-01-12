@@ -2,13 +2,15 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './App.css'
 import Homepage from './pages/Homepage'
 import Aboutpage from './pages/Aboutpage'
-import ArticleList from './pages/ArticlesList'
-import Articlepage from './pages/Articlepage'
+import ArticleList from './pages/articles/ArticlesList'
+import Articlepage from './pages/articles/Articlepage'
+import Errorpage from './pages/Errorpage'
 import Layout from './Layout'
 
 const routes = [{
   path:'/',
   element:<Layout/>,
+  errorElement:<Errorpage />,
   children: [
   {
     path: '/',
